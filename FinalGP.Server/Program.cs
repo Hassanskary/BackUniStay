@@ -58,6 +58,7 @@ namespace FinalGP.Server
             builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
             builder.Services.AddScoped<IAdminRepository, AdminRepository>();
             builder.Services.AddScoped<IChatbotService, ChatbotService>();
+            builder.Services.AddHttpClient();
 
 
             // 4) Authentication & JWT
